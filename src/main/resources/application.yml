@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot
+    username: root
+    password:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+## Mybatis 配置
+mybatis:
+  type-aliases-package: com.fj.entity
+  mapper-locations: classpath:mapping/*.xml
