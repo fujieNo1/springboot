@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value = "fujie")
+@RequestMapping(value = "login")
 public class LoginController {
 
 
@@ -15,4 +15,8 @@ public class LoginController {
         return "index";
     }
 
+    @RequestMapping(value = "register")
+    public String register(){
+        return "register";
+    }
 }

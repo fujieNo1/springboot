@@ -3,15 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>纸叠效果会员登录界面模板</title>
+<title>登录界面</title>
 <link rel="stylesheet" type="text/css" href="${fujieStatic}/css/style.css" />
 <link rel="stylesheet" type="text/css" href="${fujieStatic}/css/body.css"/>
 </head>
 <body>
 <div class="container" style="margin-top: 150px;">
-	<section id="content" style="margin-top: 150px;">
+	<section id="content">
 		<form action="" method="post">
-			<h1>会员登录</h1>
+			<h1>用户登录</h1>
 			<div>
 				<input type="text" placeholder="手机号" maxlength="11" required="" id="phone" />
 			</div>
@@ -19,12 +19,11 @@
 				<input type="password" placeholder="密码" required="" id="password" />
 			</div>
 			 <div class="">
-				<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>			</div> 
+				<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span></div>
 			<div>
-				<!-- <input type="submit" value="Log in" /> -->
 				<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>
 				<a href="#">忘记密码?</a>
-				<!-- <a href="#">Register</a> -->
+				<a href="${fujie}/login/register">注册</a>
 			</div>
 		</form><!-- form -->
 		 <div class="button">
